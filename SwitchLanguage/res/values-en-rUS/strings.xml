@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    
+    <string name="txt_select_system_language">Please select your language system</string>
+    
+    <string name="button_next_step">next</string>
+    
+</resources>
