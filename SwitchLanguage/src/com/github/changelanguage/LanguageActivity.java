@@ -21,7 +21,6 @@ import java.util.Locale;
 import com.example.switchlanguage.R;
 import com.github.language.adapter.LanguageAdapter;
 import com.github.language.controller.LanguageController;
-import com.github.language.controller.ListViewUtils;
 
 import android.app.Activity;
 import android.os.Bundle;
