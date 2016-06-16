@@ -18,7 +18,6 @@ package com.github.language.controller;
 import java.lang.reflect.Method;
 import java.util.Locale;
 
-import android.app.backup.BackupManager;
 import android.content.res.Configuration;
 
 /**
@@ -68,8 +67,7 @@ public class UpdateLanguageUtils {
 
 			mtdIActMag$updateConfiguration.invoke(objIActMag, config);
 
-			BackupManager.dataChanged("com.android.providers.settings");
-
+//			BackupManager.dataChanged("com.android.providers.settings");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

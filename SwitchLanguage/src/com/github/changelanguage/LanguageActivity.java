@@ -24,6 +24,7 @@ import com.github.language.controller.LanguageController;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.View.OnClickListener;
@@ -38,6 +39,7 @@ import android.widget.ListView;
  * @versionCode 1 <每次修改提交前+1>
  */
 public class LanguageActivity extends Activity {
+	public static final String TAG="LanguageActivity";
 	private ListView mListView;
 	private Button mNextStep;
 	private LanguageAdapter mLanguageAdapter;
@@ -50,6 +52,7 @@ public class LanguageActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.language);
+		Log.d(TAG,"---onCreate()");
 		mLanguageController = LanguageController.getInstance(getApplicationContext());
 		//初始化列表数据
 		mListLanguageInfo = mLanguageController.getListData();
